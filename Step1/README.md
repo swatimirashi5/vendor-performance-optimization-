@@ -1,5 +1,3 @@
-# Vendor Performance Analysis Project
-
 ## Step 1 – Automated Data Ingestion
 
 ### Purpose
@@ -9,6 +7,17 @@ This step creates a clean data foundation for the next stages of cleaning, trans
 
 ### Tech Used
 Python · Pandas · SQLAlchemy · SQLite · Logging  
+
+### About SQLAlchemy
+**SQLAlchemy** is a widely-used **Python library for interacting with relational databases**. In real-world companies, it serves as an **Object Relational Mapper (ORM)**, allowing developers to **write Python code to manage database records** without writing raw SQL queries.  
+
+Benefits of using SQLAlchemy:  
+- **Dynamic table management:** Automatically create or modify database tables based on data.  
+- **Clean and maintainable code:** Interact with the database using Python objects instead of raw SQL.  
+- **Production-ready reliability:** Efficiently manages database connections and transactions.  
+- **Integration with other Python tools:** Works seamlessly with Pandas, SQLite, PostgreSQL, and MySQL.  
+
+In this project, SQLAlchemy was used to **dynamically create database tables for multiple CSV files** and insert data efficiently, forming a **reliable and centralized data foundation** for vendor performance analysis.
 
 ### GitHub Script
 [View Script](https://github.com/yourusername/vendor-ingestion-script)
@@ -20,8 +29,3 @@ Ingesting inventory_data.csv in db
 --------------Ingestion Complete------------
 Total Time Taken: 0.02 minutes
 ```
-
-### Why This Step Matters
-It converts messy raw CSV files into a **structured, centralized database**, making future analysis accurate, efficient, and scalable.
-
-
